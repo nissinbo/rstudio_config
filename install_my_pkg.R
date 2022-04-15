@@ -8,7 +8,7 @@ install_my_pkg <- function(minimum = TRUE, recommend = FALSE,
   }
   
   if (minimum) {
-    pkglist <- c(pkglist, "tidyverse", "remotes", "devtools", "installr", "fs", "here", "pacman", "openxlsx", "data.table", "knitr", "rmarkdown", "lubridate", "styler", "renv")
+    pkglist <- c(pkglist, "tidyverse", "magrittr", "remotes", "devtools", "installr", "fs", "here", "pacman", "openxlsx", "data.table", "knitr", "rmarkdown", "lubridate", "styler", "renv")
   }
   
   if (recommend) {
