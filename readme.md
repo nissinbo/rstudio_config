@@ -1,9 +1,17 @@
-# R Studio settings
+# rstudio_config
 
-## Windows 
+## config
+
+download the folders then set into the directory below.
+
+### Windows 
 
 ~/AppData/Roaming/RStudio/
 
-## UNIX
+### UNIX
 
 ~/.config/rstudio/
+
+## install_my_pkg
+
+install my packages
