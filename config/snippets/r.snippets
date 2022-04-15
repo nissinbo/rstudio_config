@@ -1,0 +1,89 @@
+snippet lib
+	library(${1:package})
+
+snippet if
+	if (${1:condition}) {
+		${0}
+	}
+
+snippet el
+	else {
+		${0}
+	}
+
+snippet ei
+	else if (${1:condition}) {
+		${0}
+	}
+
+snippet fun
+	${1:name} <- function(${2:variables}) {
+		${0}
+	}
+
+snippet for
+	for (${1:variable} in ${2:vector}) {
+		${0}
+	}
+
+snippet while
+	while (${1:condition}) {
+		${0}
+	}
+
+snippet switch
+	switch (${1:object},
+		${2:case} = ${3:action}
+	)
+
+snippet ts
+	`r paste("#", date(), "------------------------------\n")`
+
+snippet shinyapp
+	library(shiny)
+	
+	ui <- fluidPage(
+	  ${0}
+	)
+	
+	server <- function(input, output, session) {
+	  
+	}
+	
+	shinyApp(ui, server)
+
+snippet shinymod
+	${1:name}_UI <- function(id) {
+	  ns <- NS(id)
+	  tagList(
+		${0}
+	  )
+	}
+	
+	${1:name} <- function(input, output, session) {
+	  
+	}
+
+snippet save
+	save(${1:file}, file = "${1:file}.RData")
+
+snippet load
+	load("${1:file}.RData")
+
+snippet saverds
+	saveRDS(${1:file}, file = "${1:file}.RData")
+
+snippet readrds
+	readRDS("${1:file}.RData")
+
+snippet set
+	setwd(dirname(rstudioapi::getActiveDocumentContext()\$path))
+
+snippet fread
+	fread("${1:file}", data.table = FALSE)
+
+snippet ggp
+	${1:data} %>% ggplot(aes(${2:x}, ${3:y})) + geom_${4:type}()
+	
+snippet update
+	installr::updateR(browse_news = FALSE, install_R = TRUE, copy_packages = FALSE,copy_Rprofile.site = FALSE, keep_old_packages = FALSE, update_packages = TRUE, start_new_R = FALSE,quit_R = TRUE)
