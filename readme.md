@@ -12,6 +12,6 @@ download the folders then set into the directory below.
 
 ~/.config/rstudio/
 
-## install_my_pkg
+## install_my_pkg.R
 
 install my packages
