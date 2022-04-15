@@ -1,6 +1,7 @@
 install_my_pkg <- function(minimum = TRUE, recommend = FALSE, 
                    option = FALSE, ubuntu = FALSE) {
   pkglist <- NULL
+  pkglist_github <- NULL
   
   if (ubuntu) {
     system("sudo hoge")
@@ -16,7 +17,7 @@ install_my_pkg <- function(minimum = TRUE, recommend = FALSE,
   
   if (option) {
     pkglist <- c(pkglist, "BiocManager", "tidymodels", "survival", "survminer", "Shiny", "rsconnect", "shinycssloaders", "rvest", "datapasta", "comorbidity", "touch", "AdhereR", "ggdag", "dagitty", "reticulate")
-    pkglist_github <- c("cran/icd", "MilesMcBain/breakerofchains", "tgerke/ggconsort")
+    pkglist_github <- c(pkglist_github, "cran/icd", "MilesMcBain/breakerofchains", "tgerke/ggconsort")
   }
   
   install.packages(pkglist, dependencies = TRUE)
