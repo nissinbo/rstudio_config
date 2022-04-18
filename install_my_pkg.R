@@ -24,5 +24,4 @@ install_my_pkg <- function(minimum = TRUE, recommend = FALSE,
   remotes::install_github(pkglist_github)
 }
 
-install_my_pkg(minimum = TRUE, recommend = FALSE, 
-               option = FALSE, ubuntu = FALSE))
+install_my_pkg()
